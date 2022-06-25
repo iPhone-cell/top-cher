@@ -234,7 +234,7 @@ ul, li {
 
 .intro {
     padding: 216px 0 122px 140px;
-    background: url("/assets/images/intro/bg.jpg") no-repeat center/cover;
+    background: url("../images/intro/bg.jpg") no-repeat center/cover;
 }
 
 .intro__wrapper {
@@ -364,17 +364,17 @@ ul, li {
 }
 
 .stocks .stocks__item-1 {
-    background: url("/assets/images/stocks/1.jpg") no-repeat center/cover;
+    background: url("../images/stocks/1.jpg") no-repeat center/cover;
     width: 100%;
 }
 
 .stocks .stocks__item-2 {
-    background: url("/assets/images/stocks/2.jpg") no-repeat center/cover;
+    background: url("../images/stocks/2.jpg") no-repeat center/cover;
     width: 100%;
 }
 
 .stocks .stocks__item-3 {
-    background: url("/assets/images/stocks/3.jpg") no-repeat center/cover;
+    background: url("../images/stocks/3.jpg") no-repeat center/cover;
     width: 100%;
 }
 
@@ -545,7 +545,7 @@ ul, li {
     letter-spacing: 0.03em;
     max-width: 327px;
     margin-bottom: 54px;
-    background: url("/assets/images/suggest/check.svg") left top no-repeat;
+    background: url("../images/suggest/check.svg") left top no-repeat;
     padding-left: 30px;
 }
 
@@ -799,19 +799,19 @@ ul, li {
 }
 
 .jobs__item-1 {
-    background: url("/assets/images/jobs/1.jpg") no-repeat center/cover;
+    background: url("../images/jobs/1.jpg") no-repeat center/cover;
 }
 
 .jobs__item-2 {
-    background: url("/assets/images/jobs/2.jpg") no-repeat center/cover;
+    background: url("../images/jobs/2.jpg") no-repeat center/cover;
 }
 
 .jobs__item-3 {
-    background: url("/assets/images/jobs/3.jpg") no-repeat center/cover;
+    background: url("../images/jobs/3.jpg") no-repeat center/cover;
 }
 
 .jobs__item-4 {
-    background: url("/assets/images/jobs/4.jpg") no-repeat center/cover;
+    background: url("../images/jobs/4.jpg") no-repeat center/cover;
 }
 
 .jobs__item-title {
@@ -1089,15 +1089,15 @@ ul, li {
     }
 
     .stocks .stocks__item-1 {
-        background: url("/assets/images/stocks/1.jpg") no-repeat top/cover;
+        background: url("../images/stocks/1.jpg") no-repeat top/cover;
     }
 
     .stocks .stocks__item-2 {
-        background: url("/assets/images/stocks/2.jpg") no-repeat top/cover;
+        background: url("../images/stocks/2.jpg") no-repeat top/cover;
     }
 
     .stocks .stocks__item-3 {
-        background: url("/assets/images/stocks/3.jpg") no-repeat top/cover;
+        background: url("../images/stocks/3.jpg") no-repeat top/cover;
     }
 
     .menu__offer {
