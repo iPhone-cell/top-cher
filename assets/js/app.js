@@ -1,1 +1,93 @@
-!function(){const e=document.querySelector(".hamburger"),t=document.querySelector(".nav-menu");e.addEventListener("click",(()=>{e.classList.toggle("active"),t.classList.toggle("active")})),document.querySelectorAll(".nav-link").forEach((s=>s.addEventListener("click",(()=>{e.classList.remove("active"),t.classList.remove("active")})))),$((function(){$("#jobsSlider").slick({infinite:!1,slidesToShow:2.5,slidesToScroll:3,arrows:!0,dots:!0,responsive:[{breakpoint:991,settings:{slidesToShow:1.1,slidesToScroll:1,infinite:!0}},{breakpoint:767,settings:{slidesToShow:1,slidesToScroll:1,dots:!0,infinite:!0}}]})}));const s=document.getElementById("tabs"),c=document.querySelectorAll(".content");s.addEventListener("click",(e=>{const t=e.target.dataset.btn;(e=>{for(let e=0;e<s.children.length;e++)s.children[e].classList.remove("active");e.classList.add("active")})(e.target);for(let e=0;e<c.length;e++)c[e].classList.remove("active"),c[e].dataset.content===t&&c[e].classList.add("active")}));const i=document.getElementById("tabs-dop"),l=document.querySelectorAll(".content-dop");i.addEventListener("click",(e=>{const t=e.target.dataset.btndop;(e=>{for(let e=0;e<i.children.length;e++)i.children[e].classList.remove("active");e.classList.add("active")})(e.target);for(let e=0;e<l.length;e++)l[e].classList.remove("active"),l[e].dataset.content2===t&&l[e].classList.add("active")}))}(),console.log("file 2");
+// Hamburger
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+	hamburger.classList.remove("active");
+	navMenu.classList.remove("active");
+}))
+
+$(function () {
+
+
+
+	// Slider: https://kenwheeler.github.io/slick/	
+	let slider = $("#jobsSlider");
+
+	slider.slick({
+		infinite: false,
+		slidesToShow: 2.5,
+		slidesToScroll: 3,
+		arrows: true,
+		dots: true,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 1.1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					infinite: true,
+				}
+			}
+		]
+	})
+});
+
+// Tabs
+const tabs = document.getElementById('tabs');
+const content = document.querySelectorAll('.content');
+
+const changeClass = el => {
+	for (let i = 0; i < tabs.children.length; i++) {
+		tabs.children[i].classList.remove('active');
+	}
+	el.classList.add('active');
+}
+
+
+tabs.addEventListener('click', e => {
+	const currTab = e.target.dataset.btn;
+	changeClass(e.target);
+	for (let i = 0; i < content.length; i++) {
+		content[i].classList.remove('active');
+		if (content[i].dataset.content === currTab) {
+			content[i].classList.add('active');
+		}
+	}
+})
+
+const tabsDop = document.getElementById('tabs-dop');
+const content2 = document.querySelectorAll('.content-dop');
+
+const changeClassDop = el => {
+	for (let i = 0; i < tabsDop.children.length; i++) {
+		tabsDop.children[i].classList.remove('active');
+	}
+	el.classList.add('active');
+}
+
+
+tabsDop.addEventListener('click', e => {
+	const currTabDop = e.target.dataset.btndop;
+	changeClassDop(e.target);
+	for (let i = 0; i < content2.length; i++) {
+		content2[i].classList.remove('active');
+		if (content2[i].dataset.content2 === currTabDop) {
+			content2[i].classList.add('active');
+		}
+	}
+})
