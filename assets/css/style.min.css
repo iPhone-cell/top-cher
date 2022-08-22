@@ -459,6 +459,7 @@ ul, li {
   margin-bottom: 54px;
   background: url("../images/suggest/check.svg") left top no-repeat;
   padding-left: 30px;
+  width: 40%;
 }
 .suggest__main-fit-main li:last-child {
   margin-bottom: 0;
@@ -1386,14 +1387,10 @@ input:focus {
   width: 100%;
   justify-content: center;
 }
-.slick-dots li {
-  margin-right: 10px;
-}
 .slick-dots li button {
   font-size: 0;
-  width: 20px;
+  width: 50px;
   height: 20px;
-  border-radius: 50%;
   border: 0;
   background-color: #000000;
   opacity: 0.6;
@@ -1401,6 +1398,32 @@ input:focus {
 .slick-dots .slick-active button {
   background-color: #12ADC1;
   opacity: 1;
+}
+
+button.slick-arrow {
+  position: absolute;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: url("../images/slider-arrow.svg") no-repeat center;
+  border: 2px solid #12ADC1;
+  background-color: #12ADC1;
+  z-index: 2;
+}
+
+button.slick-arrow:hover {
+  cursor: pointer;
+}
+
+button.slick-prev {
+  left: -10px;
+}
+
+button.slick-next {
+  transform: rotate(-180deg);
+  right: -10px;
+  position: absolute;
 }
 
 .content {
